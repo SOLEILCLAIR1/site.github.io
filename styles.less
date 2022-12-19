@@ -1,0 +1,663 @@
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@font-family: 'Segoe UI';
+@weight1:400;
+@weight2:700;
+@color-white: #fff;
+@color-purple: #7D33C5; 
+@color-gray: #303B4C;
+@color-gray2: #2d3b4d;
+@color-pink: #e7516b;
+@color-black: #000; 
+@color-purple2: #8824cd;
+@background-pink: rgba(231,81,107, 0.8);
+@background-bordo: rgba(76,31,92, 0.8);
+@width: 100%;
+@h1: 50px;
+@h2: 35px;
+@h4: 16px;
+@p: 18px;
+@p2: 16px;
+@pad1: 20px 0;
+@pad2: 5px 5px;
+@pad3:250px;
+@pad4:400px;
+@pad5:16px 20px;
+@pad6:250px 0px;
+@pad7: 50px 20px;
+@pad8:100px 0px;
+@border-radius: 50px;
+@border-radius2: 100px;
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: @font-family;
+	font-weight: @weight1;
+	line-height: 1.5;
+	margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    padding: 0;
+    margin: 0
+}
+
+h1 {font-size: @h1;}
+
+h2 {font-size: @h2;}
+
+h4 {
+    font-size: @h4;
+	color: @color-white;
+	text-transform: uppercase;
+}
+
+img {border-style: none;
+    display: block;}
+
+ul {padding: 0}
+
+li {list-style: none}
+
+a,a:active,a:hover {text-decoration: none;}
+
+.header{
+	background: url(../img/galaxy.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.flex-header {padding: @pad1;}
+
+.container-base {
+    width: @width;
+    max-width: 70rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container-base-two {
+    width: @width;
+    max-width: 70rem;
+    margin: 0 auto;
+    position: relative
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+img {
+	.logo__link {
+		height: auto;
+		max-height: 60px;
+		max-width: 60px;
+		padding-top: 10px;
+		width: auto;
+	}
+}
+
+.logo__name a{color:@color-white;font-style: italic;font-weight:@font-weight1;font-size:@h4;}
+
+.nav {
+	.nav-list {
+		display: flex;
+		font-size: 1rem;
+		overflow: hidden;
+	}
+	.nav-list>li {
+		margin-right: 2rem;
+		position: relative;
+	}
+	.nav-list>li>a {
+		border-bottom: 1px solid transparent;
+		color: @color-white;
+		display: block;
+		padding: 5px 5px;
+		&:hover {
+			border-bottom: 1px solid @color-white;
+		}
+	}
+	.nav-list>li>a.active {
+		border-bottom: 1px solid @color-white;
+	}
+}
+
+.nav-list__item--current {border-bottom: 3px solid @color-white;}
+
+form{display: flex; background:@color-white;align-items: center; border-radius: @border-radius2;}
+
+.d1 {
+	input {
+		border-radius:@border-radius2;
+		outline: none;
+		background: @color-white;
+		border: none;
+		height: 42px;
+		padding-left: 20px;
+		width: @width;
+	}
+	button {
+		background: @color-white;
+		border-radius:@border-radius2;
+		border: none;
+		cursor: pointer;
+		height: 42px;
+		outline: none;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 42px;
+		&:before {
+			color: @color-white;
+			content: "\f002";
+			font-family: FontAwesome;
+			font-size: @p2;
+		}
+	}
+}
+img {
+	.poisk {
+		height: auto;
+		max-height: 20px;
+		padding-right: 20px;
+		width: auto;
+	}
+}
+
+.one-block {padding-top:@pad3; padding-bottom:@pad4; width:40%; color: @color-white;text-align: right;}
+
+.button-one{
+    float: right;
+    text-align: center;
+    background:@color-purple; 
+    border-radius: @border-radius;
+    padding:@pad5; 
+    margin:30px 0; 
+    text-align:center; 
+    width:60%; 
+    color: @color-white; 
+    font-size: @p;}
+
+.two-block{background:@color-gray;}
+.two-block-content{padding:@pad6; display: grid;
+  grid-template-columns: repeat(2, 1fr);gap:35px;}
+.card{color: @color-white;}
+
+.three-block{background: url(../img/les.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+    text-align:center; 
+    color: @color-white;}
+.three-block-content{background-color: @background-pink; padding:@pad6;z-index:1;}
+.three-block {
+	p {
+		margin: 0 auto;
+		width:30%;
+	}
+}
+.button-three{
+	text-align:center; 
+	width:50%; 
+	color: @color-pink;
+	margin: 0 auto; 
+	font-size:@p;
+	font-weight:@font-weight2; 
+	margin-top:30px;
+
+	p {
+		background:#ffffff;
+		border-radius: 50px;
+		padding:16px 20px;
+	}
+}
+.foo-block{
+	display: flex;
+    width: @width;
+    margin: 0 auto;
+    align-items: center;
+}
+.foo-text {
+    padding: @pad7;
+    width: @width;
+	padding-right: 200px;
+
+	h4 {
+	color: @color-black;
+	}
+}
+.fo {width: @width;
+ 	height: 400px; /* Высота области */
+    margin: 0; /* Обнуляем отступы */
+    overflow: hidden; /* Прячем всё за пределами */
+    min-width: 300px;}
+.foo-block {
+	img {
+    width: @width;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+	}
+}
+
+.five-block{background: url(../img/canon.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; text-align:center; color: @color-white;
+	p {
+		margin: 0 auto;
+		width:30%;
+	}
+}
+.five-block-content{background-color: @background-bordo; padding:@pad6;z-index:1;}
+.button-five{
+	background:@color-purple2; 
+	border-radius: @border-radius;
+	padding:@p5; 
+	text-align:center; 
+	width:15%; 
+	color: @color-white;
+	margin: 0 auto; 
+	font-size: @p;
+	font-weight:@font-weight2; 
+	margin-top:30px;
+	margin-bottom:20px;
+
+	p {
+	width:100%;
+	}
+}
+
+.six-block{
+	padding:@pad;
+	background: url(../img/food1.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	h1 {
+	color:@color-white;
+	padding-right:@pad4; 
+	padding-top: 20px; 
+	padding-bottom:20px;
+	}
+}
+
+.button-six{
+	border: 1px solid @color-white; 
+	border-radius: @border-radius2;
+	text-align:center;
+	margin-right: 85%;
+	p{color:@color-white;padding:8px 0;}
+}
+
+.flex-photo{
+	display:flex;
+	align-items:center;
+}
+.six-text {
+	p {color:@color-white; padding-left:20px;}
+}
+
+.seven-block{
+	display: flex;
+    width: @width;
+    margin: 0 auto;
+    align-items: center;
+	}
+
+.seven-text {
+	padding: 50px 40px 50px 0;
+	padding-right: 200px;
+	h4{color: @color-black;}
+}
+
+
+.sev {
+	width: @width;
+	height: 400px; /* Высота области */
+    margin: 0; /* Обнуляем отступы */
+    overflow: hidden; /* Прячем всё за пределами */
+    min-width: 300px;
+	img {
+		width: @width;
+		background-repeat: no-repeat;
+		background-position: center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover; 
+		object-position: bottom;
+    	background-size: contain;
+    	object-fit: cover;
+	}
+}
+
+.eight-block{
+	background: @color-pink;
+	padding:@pad7;
+	p{color:@color-white;padding-top:15px; padding-bottom: 5px;}
+	a{color:@color-white;text-decoration: underline;}
+}
+
+.nine-block{
+	background: @color-gray2;
+	padding:@pad7;
+	p{color:@color-white;}
+}
+
+@media (min-width: 1024px) and (max-width: 1440px){
+    .container-base-two {
+        max-width: 60rem;
+    }
+    .container-base {
+        max-width: 60rem;
+    }
+    .button-one {
+        width: 80%;
+    }
+    .three-block{
+		p {
+        width: 60%;
+    	}
+	}
+    .button-five {
+        width: 35%;
+    }
+    .five-block 
+	{
+		p {
+        width: 60%;
+		}
+	}
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+        .foo-block, .seven-block {
+        display: block;
+        text-align: center;
+
+    }
+    .foo-text, .seven-text{padding: 60px 100px;}
+	
+	.container-base-two {
+        max-width: 45rem;
+    }
+    .container-base {
+        max-width: 45rem;
+    }
+    h1, h2 {
+        font-size: 35px;
+    }
+    .button-one {
+        width: 80%;
+    }
+    .three-block {
+		p {
+        width: 60%;
+		}
+    }
+    .button-five {
+        width: 35%;
+    }
+    .five-block {
+		p {
+        width: 60%;
+		}
+    }
+    .one-block {
+        width: 50%;
+        padding-top: 100px;
+        padding-bottom: @pad3;
+    }
+    .two-block-content, .three-block-content, .five-block-content, .six-block {
+        padding: @pad8;
+    }   
+}
+
+@media (max-width: 767px) {
+
+	.foo-block, .seven-block {
+        display: block;
+        text-align: center;
+
+    }
+    .foo-text, .seven-text{padding: 60px 100px;}
+
+    .nav {display: block;}
+
+    .nav {
+		.nav-list {
+        	justify-content: space-between;
+        	margin: 10px 0;
+    	}
+	}
+
+    h1, h2 {
+        font-size: 30px;
+    }
+    .container-base-two {
+        max-width: 35rem;
+    }
+    .container-base {
+        max-width: 35rem;
+    }
+    .one-block {
+        text-align: center;
+        padding: @pad8;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .foo-block {
+		img {
+        margin-top: 50px;
+		}
+    }
+    
+    .seven-block  {
+		img {
+        margin-bottom: 50px;
+		}
+    }
+
+    .button-one{
+        text-align: center;
+        float:none;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .two-block-content {
+        padding: @pad8;
+        gap:25px;
+        grid-template-columns: repeat(1, 1fr);;
+    }
+    .three-block-content {
+        padding: @pad8;
+    }
+    .three-block {
+		p {
+        width: 70%;
+		}
+    }
+    .button-three {
+        text-align: center;
+        width: 70%;
+    }
+    .foo-block {
+        display: block;
+    }
+    .foo-text {
+        padding: 50px 0;
+        width: @width;
+    }
+    .five-block-content {
+        padding: @pad8;
+    }
+    .five-block {
+		p{
+        width: 70%;
+		}
+    }
+    .button-five{
+        width: 70%;
+    }
+    .six-block {
+        padding: @pad8;
+        background-position: initial;
+    }
+    .six-block {
+		h1{
+        padding-right: 0;
+		}
+    }
+    .button-six {
+        width: @width;
+    }
+    .seven-block{
+        display: block;
+    }
+    .seven-text{
+        padding: 50px 0;
+    }   
+}
+
+@media (min-width: 425px) and (max-width: 625px) {
+
+	.foo-block, .seven-block {
+        display: block;
+        text-align: center;
+
+    }
+    .foo-text, .seven-text{padding: 60px 100px;}
+
+    .sev, .fo{
+        height: 200px; 
+    }
+
+    .container-base-two {
+        max-width: 25rem;
+    }
+    .container-base {
+        max-width: 25rem;
+    }
+    .button-one {
+        width: @width;
+    }
+    .three-block {
+		p {
+        width: 70%;
+		}
+    }
+    .button-five {
+        width: 60%;
+    }
+    .five-block {
+		p {
+        width: 70%;
+		}
+    }
+}
+
+@media (max-width: 425px) {
+
+	.foo-block, .seven-block {
+        display: block;
+        text-align: center;
+
+    }
+    .foo-text, .seven-text{padding: 60px 70px;}
+
+    .one-block, .two-block-content, .three-block-content, .foo-text, .five-block-content, .six-block, .seven-text, .eight-block, .nine-block{
+        padding: 40px 0;
+    }
+    h1, h2 {
+        font-size: 25px;
+    }
+    .container-base {
+        max-width: 20rem;
+    }
+}
+
+@media (min-width: 319px) and (max-width: 425px) {
+
+	        .foo-block, .seven-block {
+            display: block;
+            text-align: center;
+    
+        }
+        .foo-text, .seven-text{padding: 60px 40px;}
+        .sev, .fo{
+            height: 200px; 
+        }
+
+	.nav {
+		.nav-list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap:15px;}
+		}
+	
+	.container-base-two {
+		max-width: 18rem;
+	}
+	.container-base {
+		max-width: 18rem;
+	}
+	.button-one {
+		width: @width;
+	}
+	.three-block {
+		p {
+		width: @width;
+		}
+	}
+	.button-five {
+		width: @width;
+	}
+	.five-block {
+		p {
+		width: @width;
+		}
+	}
+	.five-block-content, .three-block-content {padding: 50px 50px;}
+	
+	.five-block-content, .three-block-content {
+		padding: 40px 20px;
+	}
+
+}
