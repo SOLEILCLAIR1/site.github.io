@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+	<meta charset="utf-8">
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<link rel="canonical" href="https://mmv21.github.io/index.html"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<style amp-custom>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Segoe UI';
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 35px;
+}
+h4 {
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+}
+img {
+  border-style: none;
+  display: block;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+.header {
+  background: url(img/galaxy.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.flex-header {
+  padding: 20px 0;
+}
+.container-base {
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+  position: relative;
+}
+.container-base-two {
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+  position: relative;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+img .logo__link {
+  height: auto;
+  max-height: 60px;
+  max-width: 60px;
+  padding-top: 10px;
+  width: auto;
+}
+.logo__name a {
+  color: #fff;
+  font-style: italic;
+  font-weight: weight1;
+  font-size: 16px;
+}
+.nav .nav-list {
+  display: flex;
+  font-size: 1rem;
+  overflow: hidden;
+}
+.nav .nav-list > li {
+  margin-right: 2rem;
+  position: relative;
+}
+.nav .nav-list > li > a {
+  border-bottom: 1px solid transparent;
+  color: #fff;
+  display: block;
+  padding: 5px 5px;
+}
+.nav .nav-list > li > a:hover {
+  border-bottom: 1px solid #fff;
+}
+.nav .nav-list > li > a.active {
+  border-bottom: 1px solid #fff;
+}
+.nav-list__item--current {
+  border-bottom: 3px solid #fff;
+}
+form {
+  display: flex;
+  background: #fff;
+  align-items: center;
+  border-radius: 100px;
+}
+.d1 input {
+  border-radius: 100px;
+  outline: none;
+  background: #fff;
+  border: none;
+  height: 42px;
+  padding-left: 20px;
+  width: 100%;
+}
+.d1 button {
+  background: #fff;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  height: 42px;
+  outline: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 42px;
+}
+.d1 button:before {
+  color: #fff;
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+}
+img .poisk {
+  height: auto;
+  max-height: 20px;
+  padding-right: 20px;
+  width: auto;
+}
+.one-block {
+  padding-top: 250px;
+  padding-bottom: 400px;
+  width: 40%;
+  color: #fff;
+  text-align: right;
+}
+.button-one {
+  float: right;
+  background: #7D33C5;
+  border-radius: 50px;
+  padding: 16px 20px;
+  margin: 30px 0;
+  text-align: center;
+  width: 60%;
+  color: #fff;
+  font-size: 18px;
+}
+.two-block {
+  background: #303B4C;
+}
+.two-block-content {
+  padding: 250px 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+.card {
+  color: #fff;
+}
+.three-block {
+  background: url(img/les.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+.three-block-content {
+  background-color: rgba(231, 81, 107, 0.8);
+  padding: 250px 0px;
+  z-index: 1;
+}
+.three-block p {
+  margin: 0 auto;
+  width: 30%;
+}
+.button-three {
+  text-align: center;
+  width: 50%;
+  color: #e7516b;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: weight2;
+  margin-top: 30px;
+}
+.button-three p {
+  background: #ffffff;
+  border-radius: 50px;
+  padding: 16px 20px;
+}
+.foo-block {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+.foo-text {
+  padding: 50px 20px;
+  width: 100%;
+  padding-right: 200px;
+}
+.foo-text h4 {
+  color: #000;
+}
+.fo {
+  width: 100%;
+  height: 400px;
+  /* Высота области */
+  margin: 0;
+  /* Обнуляем отступы */
+  overflow: hidden;
+  /* Прячем всё за пределами */
+  min-width: 300px;
+}
+.foo-block img {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.five-block {
+  background: url(img/canon.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+.five-block p {
+  margin: 0 auto;
+  width: 30%;
+}
+.five-block-content {
+  background-color: rgba(76, 31, 92, 0.8);
+  padding: 250px 0px;
+  z-index: 1;
+}
+.button-five {
+  background: #8824cd;
+  border-radius: 50px;
+  padding: 16px 20px;
+  text-align: center;
+  width: 15%;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.button-five p {
+  width: 100%;
+}
+.six-block {
+  padding: 20px 0;
+  background: url(img/food1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.six-block h1 {
+  color: #fff;
+  padding-right: 400px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.button-six {
+  border: 1px solid #fff;
+  border-radius: 100px;
+  text-align: center;
+  margin-right: 85%;
+}
+.button-six p {
+  color: #fff;
+  padding: 8px 0;
+}
+.flex-photo {
+  display: flex;
+  align-items: center;
+}
+.six-text p {
+  color: #fff;
+  padding-left: 20px;
+}
+.seven-block {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+.seven-text {
+  padding: 50px 40px 50px 0;
+  padding-right: 200px;
+}
+.seven-text h4 {
+  color: #000;
+}
+.sev {
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  overflow: hidden;
+  min-width: 300px;
+}
+.sev img {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  object-position: bottom;
+  background-size: contain;
+  object-fit: cover;
+}
+.eight-block {
+  background: #e7516b;
+  padding: 50px 20px;
+}
+.eight-block p {
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.eight-block a {
+  color: #fff;
+  text-decoration: underline;
+}
+.nine-block {
+  background: #2d3b4d;
+  padding: 50px 20px;
+}
+.nine-block p {
+  color: #fff;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .container-base-two {
+    max-width: 60rem;
+  }
+  .container-base {
+    max-width: 60rem;
+  }
+  .button-one {
+    width: 80%;
+  }
+  .three-block p {
+    width: 60%;
+  }
+  .button-five {
+    width: 35%;
+  }
+  .five-block p {
+    width: 60%;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .foo-block,
+  .seven-block {
+    display: block;
+    text-align: center;
+  }
+  .foo-text,
+  .seven-text {
+    padding: 60px 100px;
+  }
+  .container-base-two {
+    max-width: 45rem;
+  }
+  .container-base {
+    max-width: 45rem;
+  }
+  h1,
+  h2 {
+    font-size: 35px;
+  }
+  .button-one {
+    width: 80%;
+  }
+  .three-block p {
+    width: 60%;
+  }
+  .button-five {
+    width: 35%;
+  }
+  .five-block p {
+    width: 60%;
+  }
+  .one-block {
+    width: 50%;
+    padding-top: 100px;
+    padding-bottom: 250px;
+  }
+  .two-block-content,
+  .three-block-content,
+  .five-block-content,
+  .six-block {
+    padding: 100px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .foo-block,
+  .seven-block {
+    display: block;
+    text-align: center;
+  }
+  .foo-text,
+  .seven-text {
+    padding: 60px 100px;
+  }
+  .nav {
+    display: block;
+  }
+  .nav .nav-list {
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  h1,
+  h2 {
+    font-size: 30px;
+  }
+  .container-base-two {
+    max-width: 35rem;
+  }
+  .container-base {
+    max-width: 35rem;
+  }
+  .one-block {
+    text-align: center;
+    padding: 100px 0px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .foo-block img {
+    margin-top: 50px;
+  }
+  .seven-block img {
+    margin-bottom: 50px;
+  }
+  .button-one {
+    text-align: center;
+    float: none;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .two-block-content {
+    padding: 100px 0px;
+    gap: 25px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .three-block-content {
+    padding: 100px 0px;
+  }
+  .three-block p {
+    width: 70%;
+  }
+  .button-three {
+    text-align: center;
+    width: 70%;
+  }
+  .foo-block {
+    display: block;
+  }
+  .foo-text {
+    padding: 50px 0;
+    width: 100%;
+  }
+  .five-block-content {
+    padding: 100px 0px;
+  }
+  .five-block p {
+    width: 70%;
+  }
+  .button-five {
+    width: 70%;
+  }
+  .six-block {
+    padding: 100px 0px;
+    background-position: initial;
+  }
+  .six-block h1 {
+    padding-right: 0;
+  }
+  .button-six {
+    width: 100%;
+  }
+  .seven-block {
+    display: block;
+  }
+  .seven-text {
+    padding: 50px 0;
+  }
+}
+@media (min-width: 425px) and (max-width: 625px) {
+  .foo-block,
+  .seven-block {
+    display: block;
+    text-align: center;
+  }
+  .foo-text,
+  .seven-text {
+    padding: 60px 100px;
+  }
+  .sev,
+  .fo {
+    height: 200px;
+  }
+  .container-base-two {
+    max-width: 25rem;
+  }
+  .container-base {
+    max-width: 25rem;
+  }
+  .button-one {
+    width: 100%;
+  }
+  .three-block p {
+    width: 70%;
+  }
+  .button-five {
+    width: 60%;
+  }
+  .five-block p {
+    width: 70%;
+  }
+}
+@media (max-width: 425px) {
+  .foo-block,
+  .seven-block {
+    display: block;
+    text-align: center;
+  }
+  .foo-text,
+  .seven-text {
+    padding: 60px 70px;
+  }
+  .one-block,
+  .two-block-content,
+  .three-block-content,
+  .foo-text,
+  .five-block-content,
+  .six-block,
+  .seven-text,
+  .eight-block,
+  .nine-block {
+    padding: 40px 0;
+  }
+  h1,
+  h2 {
+    font-size: 25px;
+  }
+  .container-base {
+    max-width: 20rem;
+  }
+}
+@media (min-width: 319px) and (max-width: 425px) {
+  .foo-block,
+  .seven-block {
+    display: block;
+    text-align: center;
+  }
+  .foo-text,
+  .seven-text {
+    padding: 60px 40px;
+  }
+  .sev,
+  .fo {
+    height: 200px;
+  }
+  .nav .nav-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  .container-base-two {
+    max-width: 18rem;
+  }
+  .container-base {
+    max-width: 18rem;
+  }
+  .button-one {
+    width: 100%;
+  }
+  .three-block p {
+    width: 100%;
+  }
+  .button-five {
+    width: 100%;
+  }
+  .five-block p {
+    width: 100%;
+  }
+  .five-block-content,
+  .three-block-content {
+    padding: 50px 50px;
+  }
+  .five-block-content,
+  .three-block-content {
+    padding: 40px 20px;
+  }
+}
+</style>
+    <title>amp version</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+
+
+</head>
+	
+<header class="header" id="header">
+        <div class="flex-header">
+		<div class = "container-base">
+            <nav class="nav">
+                <div class="logo"><a href="index.html">
+					<amp-img src="img/logo.png" class="logo__link" alt=""></amp-img>>
+					<span class="logo__name"><a href="index.html">Photoshop Website template</a></span>
+				</div>
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="">About</a></li>
+                    <li class="nav-list__item"><a href="">Work</a></li>
+                    <li class="nav-list__item"><a href="">Services</a></li>
+                    <li class="nav-list__item"><a href="">FAQ</a></li>
+                    <li class="nav-list__item"><a href="">Contact</a></li>   
+                </ul>
+				<div class="d1">
+					<form>
+					<input type="text" placeholder="Search Website">
+					<amp-img src="img/poisk.png" class="poisk" alt=""></amp-img>>
+					</form>
+				</div>
+            </nav>
+        </div>
+		</div>
+
+        <div class="container-base">
+			<div class="one-block">
+					<h1>Designs your eyeballs will thank you for</h1>
+						<div class="button-one">
+							<p>Get Started Today</p>
+						</div>
+			</div>
+        </div>
+</header>
+
+		<div class="two-block">	
+			<div class="container-base-two">
+				<div class="two-block-content">	
+				<div class ="card">
+					<h3>A fantastic heading</h3>
+					<p>zlaboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+				</div>
+				<div class ="card">
+					<h3>Good day blokes</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+				</div>
+				<div class ="card">
+					<h3>Blaz Robar for president</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+				</div>
+				<div class ="card">
+					<h3>vote for robar</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="three-block">
+		<div class="three-block-content">
+			<h2>Wicked & whack, band band boo!</h2>
+			<p>Lorem ipsum olor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+				<div class="button-three">
+					<p>Get Started Today</p>
+				</div>
+		</div>
+		</div>
+
+		<div class="foo-block">
+			<div class = "fo"><amp-img src="img/fo.png" alt=""></amp-img></div>
+				<div class="foo-text">
+					<h4>A heading is what you need here</h4>
+					<p>Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+					<br><br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+				</div>
+		</div>
+
+		<div class="five-block">
+			<div class="five-block-content">
+				<h2>Experience the rush today</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipisicing elit.</p>
+					<div class="button-five">
+						<p>Get Started Today</p>
+					</div>
+				<p>Lorem ipsum dolor sit amet, consectetur </p>
+			</div>
+		</div>
+		
+		<div class="six-block">
+			<div class="container-base">
+				<div class="button-six">
+					<p>Photography</p>
+				</div>
+					<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+				<div class="flex-photo">
+					<amp-img src="img/photo.png" alt=""></amp-img>
+						<div class="six-text">
+							<p>Blaz Robar, god like web designer</p>
+						</div>
+				</div>
+			</div>
+        </div>
+
+			<div class="seven-block">
+				<div class = "sev"><amp-img src="img/fo.png" alt=""></amp-img></div>
+				<div class="seven-text">
+					<h4>A heading is what you need here</h4>
+					<p>Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+					<br><br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+				</div>
+        	</div>
+		
+		<div class="eight-block">
+			<div class="container-base">
+				<h4>Get in touch</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				<p><a href="">help@yomuma.com</a></p>
+				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				<br><br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+				<br><br>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+			</div>
+        </div>
+		
+		<div class="nine-block">
+			<div class="container-base">
+				<p>psum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				<br><br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+			</div>
+        </div>
+
+</body>
+</html>
